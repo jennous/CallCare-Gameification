@@ -23,14 +23,6 @@ namespace CallCare_Gameification_BE.Controllers
             _userFunctions = new UserFunctions(_context);
         }
 
-
-        // GET: api/<Users>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
         // GET api/<Users>/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserDetails(int id)

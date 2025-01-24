@@ -33,7 +33,7 @@ namespace CallCare_Gameification_BE.Classes
 
                     if (user != null)
                     {
-                        if (user.IsAdmin == 1)
+                        if (user.IsAdmin == true)
                         {
                             return true;
                         }
@@ -69,7 +69,7 @@ namespace CallCare_Gameification_BE.Classes
 
                     if (user != null)
                     {
-                        if (user.isActive == 1 && user.IsDeleted == 0)
+                        if (user.isActive == true && user.IsDeleted == false)
                         {
                             return new ErrorHandleing(HttpStatusCode.OK, "User is active"); ;
                         }
@@ -160,7 +160,7 @@ namespace CallCare_Gameification_BE.Classes
                     var user = _context.Users.Find(userid);
                     
 
-                    if (user != null && user.IsAdmin == 1)
+                    if (user != null && user.IsAdmin == true)
                     {
                         return (new ErrorHandleing(HttpStatusCode.OK, ""), _context.Users);
                     }

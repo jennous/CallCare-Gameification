@@ -12,6 +12,10 @@ namespace CallCare_Gameification_BE.DB
 
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Badge> Badges { get; set; }
+
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>(entity =>
