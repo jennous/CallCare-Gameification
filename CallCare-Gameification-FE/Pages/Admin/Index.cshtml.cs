@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace CallCare_Gameification_FE.Pages.Admin
+namespace CallCare_Gameification_FE.Pages
 {
     public class IndexModel : PageModel
     {
