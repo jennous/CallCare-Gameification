@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCare-Gameification-FE", "CallCare-Gameification-FE\CallCare-Gameification-FE.csproj", "{02BCC0E8-B137-4D7C-A518-9D6DE93233FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCare-Gameification-BE", "CallCare-Gameification-BE\CallCare-Gameification-BE.csproj", "{5692DFA2-C04A-492A-A373-D2621CCD86CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCare-Gameification-UT", "CallCare-Gameification-UT\CallCare-Gameification-UT.csproj", "{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02BCC0E8-B137-4D7C-A518-9D6DE93233FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BCC0E8-B137-4D7C-A518-9D6DE93233FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BCC0E8-B137-4D7C-A518-9D6DE93233FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BCC0E8-B137-4D7C-A518-9D6DE93233FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5692DFA2-C04A-492A-A373-D2621CCD86CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5692DFA2-C04A-492A-A373-D2621CCD86CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5692DFA2-C04A-492A-A373-D2621CCD86CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5692DFA2-C04A-492A-A373-D2621CCD86CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

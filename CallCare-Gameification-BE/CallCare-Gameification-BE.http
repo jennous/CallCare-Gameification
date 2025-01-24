@@ -1,0 +1,6 @@
+@CallCare_Gameification_BE_HostAddress = http://localhost:5186
+
+GET {{CallCare_Gameification_BE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
