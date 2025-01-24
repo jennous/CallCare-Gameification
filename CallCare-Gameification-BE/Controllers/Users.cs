@@ -6,8 +6,8 @@ using System;
 using System.Configuration;
 using CallCare_Gameification_BE.DB;
 using Microsoft.Extensions.Configuration;
+using System.Net;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace CallCare_Gameification_BE.Controllers
 {
@@ -33,10 +33,23 @@ namespace CallCare_Gameification_BE.Controllers
 
         // GET api/<Users>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<IActionResult> GetUserDetails(int id)
         {
-            return "value";
+            (ErrorHandleing a, Models.User b) = _userFunctions.getUser(id);
+            return StatusCode((int)a._Status, b);
         }
+
+        //[HttpGet("{id}")]
+        //public async Task<IActionResult> GetUserBadges(int id)
+        //{
+
+        //}
+
+        //[HttpGet("{id}")]
+        //public async Task<IActionResult> GetUsers(int id)
+        //{
+
+        //}
 
 
         // POST api/<Users>
@@ -44,17 +57,5 @@ namespace CallCare_Gameification_BE.Controllers
         public void Post([FromBody] string value)
         {
         }
-
-        //// PUT api/<Users>/5
-        //[HttpPut("{id}")]
-        //public void Put(int id, [FromBody] string value)
-        //{
-        //}
-
-        //// DELETE api/<Users>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
     }
 }
