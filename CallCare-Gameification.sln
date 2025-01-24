@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCare-Gameification-BE",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallCare-Gameification-UT", "CallCare-Gameification-UT\CallCare-Gameification-UT.csproj", "{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CallCare-Gameification-DB", "CallCare-Gameification-DB\CallCare-Gameification-DB.sqlproj", "{D6AF6F87-9F24-4039-BA4A-27CC7017D4B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1B68A7A-E494-4F05-A051-708CF6A9D7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6AF6F87-9F24-4039-BA4A-27CC7017D4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6AF6F87-9F24-4039-BA4A-27CC7017D4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6AF6F87-9F24-4039-BA4A-27CC7017D4B2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D6AF6F87-9F24-4039-BA4A-27CC7017D4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6AF6F87-9F24-4039-BA4A-27CC7017D4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6AF6F87-9F24-4039-BA4A-27CC7017D4B2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
