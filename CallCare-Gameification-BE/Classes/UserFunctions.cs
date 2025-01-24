@@ -1,6 +1,7 @@
 ﻿using CallCare_Gameification_BE.DB;
-using CallCare_Gameification_BE.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Validations.Rules;
 
 namespace CallCare_Gameification_BE.Classes
 {
@@ -18,11 +19,34 @@ namespace CallCare_Gameification_BE.Classes
         /// </summary>
         /// <param name="userid"></param>
         /// <returns></returns>
-        public bool isAdmin(int userid)
+        public bool IsAdmin(int userid)
         {
-            using (var con = new callcareDB())
+            try
             {
+                using (_context)
+                {
+                    var user = _context.Users.Find(userid);
 
+                    if (user != null)
+                    {
+                        if (user.IsAdmin == 1)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch
+            {
+                return false;
             }
         }
 

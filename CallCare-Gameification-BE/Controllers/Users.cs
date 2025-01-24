@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using CallCare_Gameification_BE.Models;
 using Microsoft.AspNetCore.Http;
+using CallCare_Gameification_BE.Classes;
 using System;
+using System.Configuration;
 using CallCare_Gameification_BE.DB;
+using Microsoft.Extensions.Configuration;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -11,8 +13,17 @@ namespace CallCare_Gameification_BE.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Users : ControllerBase
+    public class UsersController : ControllerBase
     {
+        private readonly callcareDB _context;
+        private UserFunctions _userFunctions;
+
+        public UsersController(callcareDB context) {
+            _context = context;
+            _userFunctions = new UserFunctions(_context);
+        }
+
+
         // GET: api/<Users>
         [HttpGet]
         public IEnumerable<string> Get()
