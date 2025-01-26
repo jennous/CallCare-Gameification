@@ -1,4 +1,4 @@
-﻿namespace CallCare_Gameification_BE.Models
+﻿namespace CallCare_Gameification_FE.Models
 {
     public class User
     {
