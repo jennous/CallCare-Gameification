@@ -16,5 +16,12 @@ namespace CallCare_Gameification_FE.Pages.User
         {
 
         }
+
+        [HttpGet("{id}")]
+        public void OnGet(int id)
+        {
+
+        }
+
     }
 }
